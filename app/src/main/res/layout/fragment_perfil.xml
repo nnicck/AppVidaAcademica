@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tituloPerfil"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="MEU PERFIL"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Nome -->
+    <TextView
+        android:id="@+id/labelNome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Nome do aluno"
+        android:textSize="14sp"
+        android:textColor="@color/blue"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@id/tituloPerfil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/nomeAluno"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="João da Silva"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@id/labelNome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Curso -->
+    <TextView
+        android:id="@+id/labelCurso"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Curso"
+        android:textSize="14sp"
+        android:textColor="@color/blue"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/nomeAluno"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/cursoAluno"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Técnico em Desenvolvimento de Sistemas"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@id/labelCurso"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Turma / Semestre -->
+    <TextView
+        android:id="@+id/labelTurma"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Turma / Semestre"
+        android:textSize="14sp"
+        android:textColor="@color/blue"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/cursoAluno"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/turmaAluno"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="2º semestre"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@id/labelTurma"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Unidade -->
+    <TextView
+        android:id="@+id/labelUnidade"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Unidade"
+        android:textSize="14sp"
+        android:textColor="@color/blue"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/turmaAluno"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/unidadeAluno"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="SENAI Armando de Arruda Pereira"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@id/labelUnidade"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

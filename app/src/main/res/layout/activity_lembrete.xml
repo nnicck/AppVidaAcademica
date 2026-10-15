@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        app:title="Novo Lembrete"
+
+        android:background="@color/blue"
+        app:titleTextColor="@color/white"
+        app:navigationIconTint="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/labelTitulo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Título do lembrete"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="20dp" />
+
+    <EditText
+        android:id="@+id/campoTitulo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Digite o título"
+        android:inputType="textCapSentences"
+        android:singleLine="true"
+        android:padding="12dp"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/labelTitulo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="20dp" />
+
+    <TextView
+        android:id="@+id/labelDescricao"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Descrição"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/campoTitulo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="20dp" />
+
+    <EditText
+        android:id="@+id/campoDescricao"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        android:hint="Descreva seu lembrete (opcional)"
+        android:inputType="textCapSentences|textMultiLine"
+        android:gravity="top|start"
+        android:padding="12dp"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/labelDescricao"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="20dp" />
+
+    <Button
+        android:id="@+id/btnSalvarLembrete"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Salvar"
+        android:textAllCaps="true"
+        android:backgroundTint="@color/blue"
+        android:textColor="@color/white"
+        android:layout_marginTop="28dp"
+        app:layout_constraintTop_toBottomOf="@id/campoDescricao"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="20dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
